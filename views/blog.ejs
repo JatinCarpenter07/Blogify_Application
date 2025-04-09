@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head') %>
+        <title>Blog-Page</title>
+</head>
+
+<body>
+    <%- include('./partials/navbar') %>
+        <div class="container my-5">
+            <div class="card shadow-lg">
+                <img src="/<%= blog.coverImageUrl %>" class="card-img-top img-fluid" style="max-height: 400px; object-fit: cover;" alt="Cover Image">
+                <div class="card-body">
+                    <h2 class="card-title">
+                        <%= blog.title %>
+                    </h2>
+                    <p class="card-text text-muted">By <img src="<%=author.profileImage%>" alt="img" width="30px"> <%= author.Name %> | <%= blog.createdAt.toDateString() %>
+                    </p>
+                    <hr>
+                    <p class="card-text" style="white-space: pre-line;">
+                        <b>Description : </b><%= blog.description %>
+                    </p>
+                    <hr>
+                    <p class="card-text" style="white-space: pre-line;">
+                        <%= blog.body %>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    <%- include('./partials/script') %>
+</body>
+
+</html>

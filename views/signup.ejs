@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head') %>
+    <title>Sign-Up-Page</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <%- include('./partials/navbar') %>
+    <form action="/user/signup" method="post" class="container mt-4" enctype="multipart/form-data">
+        <div class="mb-3">
+          <label for="Name" class="form-label">Name</label>
+          <input type="text" class="form-control" name="Name" aria-describedby="emailHelp" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" name="email" aria-describedby="emailHelp" required>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" name="password" required>
+        </div>
+        <div class="mb-3">
+          <label for="profileImage" class="form-label">Profile Photo</label>
+            <input type="file" class="form-control" name="profileImage" accept=".jpg,.png">
+        </div>
+        <button type="submit" class="btn btn-dark">Submit</button>
+      </form>
+    <%- include('./partials/footer') %>
+    <%- include('./partials/script') %>
+</body>
+</html>

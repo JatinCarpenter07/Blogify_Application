@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head') %>
+    <title>Log-In-Page</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <%- include('./partials/navbar') %>
+    <form action="/user/login" method="post" class="container mt-4">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" name="email" aria-describedby="emailHelp" required>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-dark">Submit</button>
+
+        <!-- Sign-Up Button -->
+        <div class="mt-3">
+          <span>Don't have an account?</span>
+          <a href="/user/signup" class="btn btn-outline-dark ms-2">Sign Up</a>
+        </div>
+    </form>
+    
+    <%- include('./partials/footer') %>
+    <%- include('./partials/script') %>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark sticky-top" data-bs-theme="dark">
+    <div class="container-fluid">
+        <!-- Left Side -->
+        <a href="/"><img src="/images/logo.png" alt="Logo" class="img-fluid me-2" style="height: 40px;"></a>
+        <a class="navbar-brand" href="/">Blogify</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+
+                <% if (locals.user) { %>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog/addBlog">Add Blog</a>
+                    </li>
+                    <% } %>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About</a>
+                        </li>
+            </ul>
+
+            <!-- Right Side -->
+            <ul class="navbar-nav ms-auto">
+                <% if (!locals.user) { %>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/user/signup">Sign-Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/user/login">LogIn</a>
+                    </li>
+                    <% } else { %>
+                        <li class="nav-item dropdown d-flex align-items-center">
+
+                            <!-- Dropdown -->
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <%= locals.user.Name %>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="/account">Account</a></li>
+                                <li><a class="dropdown-item" href="/user/logout">Log Out</a></li>
+                            </ul>
+                            <!-- Profile Image -->
+                            <img src="<%= locals.user.profileImage || '/default-avatar.png' %>" alt="Profile"
+                                class="rounded-circle me-2" style="width: 32px; height: 32px; object-fit: cover;">
+                        </li>
+                        <% } %>
+            </ul>
+        </div>
+    </div>
+</nav>
+<a href="javascript:history.back()"
+   id="back-button"
+   class="btn btn-light border position-fixed start-0 ms-3 rounded-circle d-flex align-items-center justify-content-center shadow"
+   style="top: 70px; width: 30px; height: 30px; z-index: 1050; opacity: 0.8;">
+   <img src="/images/arrowImage.png" alt="Back" class="img-fluid" style="max-width: 18px; max-height: 18px;">
+</a>
+
+
+
+<script>
+    // Hide back button if on homepage
+    if (window.location.pathname === "/") {
+        document.getElementById("back-button").style.display = "none";
+    }
+</script>
+
+<% if(locals.error){ %>
+    <div id="error-message" class="p-3 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-3 m-4">
+        <%= error %>
+    </div>
+    <script>
+        setTimeout(() => {
+            const errorMessage = document.getElementById('error-message');
+            if (errorMessage) {
+                errorMessage.style.display = 'none';
+            }
+        }, 3000);
+    </script>
+    <% } %>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head') %>
+        <title>Blog-Page</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <%- include('./partials/navbar') %>
+        <div class="container my-5">
+            <div class="card shadow-lg">
+                <img src="/<%= blog.coverImageUrl %>" class="card-img-top img-fluid"
+                    style="max-height: 400px; object-fit: cover;" alt="Cover Image">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h2 class="card-title mb-0">
+                            <%= blog.title %>
+                        </h2>
+                        <% if (user && (user._id.toString()===blog.createdBy._id.toString() || user.role=="admin" || user.role=="adminAuthor") ) { %>
+                            <div class="btn-group" role="group">
+                                <% if(blog.createdBy._id.toString() === user._id.toString()){ %>
+                                <a href="/blog/<%= blog._id %>/edit" class="btn btn-sm btn-outline-dark">Edit</a>
+                                <% } %>
+                                <a href="/blog/<%= blog._id %>/delete" class="btn btn-sm btn-outline-danger">Delete</a>
+                                </div>
+                            <% } %>
+                    </div>
+                    <a href="/user/author/<%= author._id %>" class="text-decoration-none">
+                        <p class="card-text text-muted">By <img src="<%=author.profileImage%>" alt="img" width="30px"
+                                style="border-radius: 50%; object-fit: cover;">
+                            <%= author.Name %> | <%= blog.createdAt.toDateString() %>
+                        </p>
+                    </a>
+                    <hr>
+                    <p class="card-text" style="white-space: pre-line;">
+                        <b>Description : </b>
+                        <%= blog.description %>
+                    </p>
+                    <hr>
+                    <p class="card-text" style="white-space: pre-line;">
+                        <%= blog.body %>
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+            <h4>Comments (<%= comments.length %>)</h4>
+
+            <!-- List of Comments -->
+            <div class="mb-4">
+                <% comments.forEach(comment=> { %>
+                    <div class="border rounded p-2 mb-2 
+            <%= comment.createdBy._id.toString() === author._id.toString() ? 'bg-warning-subtle' : 'bg-light' %>">
+
+                        <p class="card-text text-muted d-flex justify-content-between align-items-center">
+                            <span>
+                                <img src="<%= comment.createdBy.profileImage %>" alt="img" width="30px"
+                                    style="border-radius: 50%; object-fit: cover;">
+                                <%= comment.createdBy.Name %>
+                                    <% if (comment.createdBy._id.toString()===author._id.toString()) { %>
+                                        <span class="badge bg-warning text-dark ms-2">Author</span>
+                                        <% } %>
+                                            | <%= comment.createdAt.toDateString() %>
+                            </span>
+
+                            <% if (user && (comment.createdBy._id.toString()===user._id.toString() || user.role=="admin" || user.role=="adminAuthor")) { %>
+
+                                <span class="btn-group" role="group">
+                                    <% if(comment.createdBy._id.toString() === user._id.toString()){ %>
+                                    <a href="/blog/<%=blog._id %>/<%=comment._id %>/editComments" class="btn btn-sm btn-outline-dark">Edit</a>
+                                    <% } %>
+                                    <a href="/blog/<%=blog._id %>/<%=comment._id %>/deleteComments"
+                                        class="btn btn-sm btn-outline-danger">Delete</a>
+                                    </span>
+                                <% } %>
+                        </p>
+
+                        <p class="mb-0">
+                            <%= comment.content %>
+                        </p>
+                    </div>
+                    <% }) %>
+            </div>
+
+
+            <!-- Comment Form -->
+            <form action="/blog/<%= blog._id %>/comments" method="POST">
+                <div class="form-group mb-3">
+                    <label for="commentText" class="form-label">Write a Comment</label>
+                    <textarea name="commentText" class="form-control" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark">Post Comment</button>
+            </form>
+
+        </div>
+
+
+
+
+
+
+
+        <%- include('./partials/footer') %>
+            <%- include('./partials/script') %>
+</body>
+
+</html>

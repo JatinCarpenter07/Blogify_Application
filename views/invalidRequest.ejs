@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head') %>
+    <title>Invalid Request</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <%- include('./partials/navbar') %>
+
+    <div class="container text-center my-5">
+        <div class="card shadow p-5">
+            <h1 class="text-danger mb-3">404 - Invalid Request</h1>
+            <p class="mb-4">The page you're looking for doesn't exist or you made an invalid request.</p>
+            <% if(locals.reason){ %>
+                <p class="mb-4"><b>Reason : </b><%= reason %></p>  
+            <% } %>              
+            <a href="/" class="btn btn-outline-dark">Go to Home</a>
+        </div>
+    </div>
+
+    <%- include('./partials/footer') %>
+    <%- include('./partials/script') %>
+</body>
+</html>

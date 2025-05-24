@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head') %>
+    <title>Author - <%= author.Name %></title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <%- include('./partials/navbar') %>
+
+    <div class="container my-5">
+        <!-- Author Info -->
+        <div class="text-center mb-5">
+            <img src="<%= author.profileImage %>" alt="Author Image" class="rounded-circle" width="120" height="120" style="object-fit: cover;">
+            <h2 class="mt-3"><%= author.Name %></h2>
+            <p class="text-muted"><%= author.email %></p>
+        </div>
+
+        <!-- Author Blogs -->
+        <div>
+            <h4 class="mb-4">📝 Blogs by <%= author.Name %></h4>
+            <% if (authorBlogs.length === 0) { %>
+                <p class="text-muted text-center">No blogs written yet.</p>
+            <% } else { %>
+                <div class="row">
+                    <% authorBlogs.forEach(blog => { %>
+                        <div class="col-md-4 mb-4">
+                            <div class="card shadow-sm h-100">
+                                <img src="/<%= blog.coverImageUrl %>" class="card-img-top" style="height: 180px; object-fit: cover;" alt="Blog Image">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title"><%= blog.title %></h5>
+                                    <p class="card-text text-muted" style="max-height: 70px; overflow: auto;"><%= blog.description %></p>
+                                    <div class="mt-auto d-flex justify-content-between">
+                                        <a href="/blog/<%= blog._id %>" class="btn btn-sm btn-outline-dark">View</a>
+                                        <% if (user && (user._id.toString() === blog.createdBy._id.toString() || user.role=="admin" || user.role=="adminAuthor")) { %>
+                                            <span class="btn-group" role="group">
+                                                <% if(blog.createdBy._id.toString() === user._id.toString()){ %>
+                                                <a href="/blog/<%= blog._id %>/edit" class="btn btn-sm btn-outline-dark">Edit</a>
+                                                <% } %>
+                                                <a href="/blog/<%= blog._id %>/delete" class="btn btn-sm btn-outline-danger">Delete</a>
+                                                </span>
+                                        <% } %>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <% }) %>
+                </div>
+            <% } %>
+        </div>
+    </div>
+
+    <%- include('./partials/footer') %>
+    <%- include('./partials/script') %>
+</body>
+</html>

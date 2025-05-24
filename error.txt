@@ -1,0 +1,39 @@
+{
+  "Time": "04/05/2025, 00:16:34",
+  "Error": {
+    "name": "Error",
+    "message": "ENOENT: no such file or directory, unlink 'E:\\NodeJs\\Node_16_Blogging_Application\\public\\uploads\\1745731619417-india.jpg'",
+    "stack": "Error: ENOENT: no such file or directory, unlink 'E:\\NodeJs\\Node_16_Blogging_Application\\public\\uploads\\1745731619417-india.jpg'\n    at Object.unlinkSync (node:fs:1953:11)\n    at removeUser (E:\\NodeJs\\Node_16_Blogging_Application\\controllers\\admin.js:134:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+  },
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/admin/removeUser/6816640bc5a75450208f276f",
+  "Method": "GET"
+}
+
+{
+  "Time": "04/05/2025, 13:53:57",
+  "Error": {
+    "name": "Error",
+    "message": "ENOENT: no such file or directory, unlink 'E:\\NodeJs\\Node_16_Blogging_Application\\public\\uploads\\1746225517112-Screenshot 2025-05-03 040820.png'",
+    "stack": "Error: ENOENT: no such file or directory, unlink 'E:\\NodeJs\\Node_16_Blogging_Application\\public\\uploads\\1746225517112-Screenshot 2025-05-03 040820.png'\n    at Object.unlinkSync (node:fs:1953:11)\n    at editProfile (E:\\NodeJs\\Node_16_Blogging_Application\\controllers\\account.js:49:20)\n    at Layer.handleRequest (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\router\\lib\\route.js:157:13)\n    at done (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\multer\\lib\\make-middleware.js:47:7)\n    at indicateDone (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\multer\\lib\\make-middleware.js:51:68)\n    at E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\multer\\lib\\make-middleware.js:157:11\n    at WriteStream.<anonymous> (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\multer\\storage\\disk.js:43:9)\n    at WriteStream.emit (node:events:530:35)\n    at finish (node:internal/streams/writable:955:10)"
+  },
+  "IP": "127.0.0.1",
+  "User": "Praveen Vishwakarma",
+  "Path": "/account/profile/edit",
+  "Method": "POST"
+}
+
+{
+  "Time": "19/05/2025, 13:12:03",
+  "Error": {
+    "name": "MongoServerError",
+    "message": "Already registered with this email",
+    "stack": "MongoServerError: E11000 duplicate key error collection: blogifyDB.usersData index: email_1 dup key: { email: \"jatincarpentar64@gmail.com\" }\n    at InsertOneOperation.execute (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongodb\\lib\\operations\\insert.js:51:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async tryOperation (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:207:20)\n    at async executeOperation (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:75:16)\n    at async Collection.insertOne (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongodb\\lib\\collection.js:157:16)"
+  },
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/signup",
+  "Method": "POST"
+}
+

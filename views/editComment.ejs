@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head') %>
+    <title>Edit-Comment-Page</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <%- include('./partials/navbar') %>
+    
+    <form action="/blog/<%= blogId %>/<%= commentId %>/editComments" method="POST" class="m-4">
+        <div class="form-group mb-3">
+            <label for="commentText" class="form-label">Edit the Comment</label>
+            <textarea name="commentText" class="form-control" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark">Edit Comment</button>
+    </form>
+
+    <%- include('./partials/footer') %>
+    <%- include('./partials/script') %>
+</body>
+</html>

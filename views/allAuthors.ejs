@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head') %>
+    <title>All Authors</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <%- include('./partials/navbar') %>
+
+    <div class="container my-5">
+        <h2 class="mb-4 text-center">👨‍💻 All Authors</h2>
+
+        <% if (authorsData.length > 0) { %>
+            <div class="row">
+                <% authorsData.forEach(author => { %>
+                    <div class="col-md-4 d-flex align-items-center mb-4">
+                        <img src="<%= author.profileImage %>" class="rounded-circle me-3" width="60" height="60" style="object-fit: cover;" alt="Author">
+                        <div>
+                            <h6 class="mb-1"><%= author.Name %></h6>
+                            <a href="/user/author/<%= author._id %>" class="btn btn-sm btn-outline-dark">Explore</a>
+                        </div>
+                    </div>
+                <% }) %>
+            </div>
+        <% } else { %>
+            <p class="text-center text-muted">No authors found.</p>
+        <% } %>
+    </div>
+
+    <%- include('./partials/footer') %>
+    <%- include('./partials/script') %>
+</body>
+</html>

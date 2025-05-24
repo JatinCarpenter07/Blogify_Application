@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head') %>
+    <title>Search Results</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <%- include('./partials/navbar') %>
+
+    <div class="container my-5">
+
+        <h3 class="mb-4">🔍 Search Results for "<%= searchQuery %>"</h3>
+
+        <!-- Matching Blogs -->
+        <div class="mb-5">
+            <h4 class="mb-3">📚 Matching Blogs</h4>
+            <% if (matchedBlogs.length) { %>
+                <div class="d-flex flex-wrap justify-content-start">
+                    <% matchedBlogs.forEach(blog => { %>
+                        <div class="card m-3 shadow-sm" style="width: 18rem;">
+                            <img src="<%= blog.coverImageUrl %>" class="card-img-top" style="height: 180px; object-fit: cover;" alt="Cover">
+                            <div class="card-body">
+                                <h5 class="card-title"><%= blog.title %></h5>
+                                <p class="card-text" style="max-height: 70px; overflow-y: auto;"><%= blog.description %></p>
+                                <a href="/blog/<%= blog._id %>" class="btn btn-sm btn-outline-dark">View Blog</a>
+                            </div>
+                        </div>
+                    <% }) %>
+                </div>
+            <% } else { %>
+                <p class="text-muted">No matching blogs found.</p>
+            <% } %>
+        </div>
+
+        <!-- Matching Authors -->
+        <div>
+            <h4 class="mb-3">👤 Matching Authors</h4>
+            <% if (matchedAuthors.length) { %>
+                <div class="row">
+                    <% matchedAuthors.forEach(author => { %>
+                        <div class="col-md-4 d-flex align-items-center mb-3">
+                            <img src="<%= author.profileImage %>" class="rounded-circle me-3" width="60" height="60" style="object-fit: cover;" alt="Author">
+                            <div>
+                                <h6 class="mb-1"><%= author.Name %></h6>
+                                <a href="/user/author/<%= author._id %>" class="btn btn-sm btn-outline-dark">Explore</a>
+                            </div>
+                        </div>
+                    <% }) %>
+                </div>
+            <% } else { %>
+                <p class="text-muted">No matching authors found.</p>
+            <% } %>
+        </div>
+    </div>
+
+    <%- include('./partials/footer') %>
+    <%- include('./partials/script') %>
+</body>
+</html>

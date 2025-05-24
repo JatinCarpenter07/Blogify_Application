@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head') %>
+        <title>About - Blogify</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <%- include('./partials/navbar') %>
+
+        <main class="container my-5">
+            <section class="mb-5 text-center">
+                <h1 class="mb-3">About <img src="/images/logo.png" alt="Logo" class="img-fluid m-2" style="height: 50px;"><span class="text-primary">Blogify</span></h1>
+                <p class="lead text-muted">
+                    Blogify is a modern, full-featured blogging platform designed for seamless content creation and
+                    interaction. It empowers users with a personalized space to express ideas, share knowledge, and
+                    engage in meaningful discussions.
+                </p>
+            </section>
+
+            <section class="row text-center mb-5">
+                <div class="col-md-4">
+                    <i class="fas fa-rss fa-3x mb-2 text-warning"></i> <!-- Changed from text-primary -->
+                    <h5>Explore Blogs</h5>
+                    <p>View the latest blogs, trending posts, and explore content by popular authors.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-user-plus fa-3x mb-2 text-teal" style="color: #20c997;"></i> <!-- Custom teal color -->
+                    <h5>User Features</h5>
+                    <p>Sign up, login, and manage your account. Create, edit, or delete blogs and comments easily.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-user-shield fa-3x mb-2 text-violet" style="color: #6f42c1;"></i> <!-- Custom violet color -->
+                    <h5>Admin Control</h5>
+                    <p>Admins can manage all users, blogs, and comments with a powerful dashboard for moderation.</p>
+                </div>
+            </section>
+
+            <section class="mb-5">
+                <h4>Key Features</h4>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="fas fa-eye text-success me-2"></i> View detailed blogs and
+                        author profiles</li>
+                    <li class="list-group-item"><i class="fas fa-comments text-info me-2"></i> Comment on blogs
+                        (highlighted author comments)</li>
+                    <li class="list-group-item"><i class="fas fa-pencil-alt text-warning me-2"></i> Edit and delete only
+                        your own content</li>
+                    <li class="list-group-item"><i class="fas fa-user-circle text-primary me-2"></i> Account panel to
+                        manage your blogs and comments</li>
+                    <li class="list-group-item"><i class="fas fa-user-times text-danger me-2"></i> Deleting users also
+                        removes their blogs & comments</li>
+                    <li class="list-group-item"><i class="fas fa-cogs text-secondary me-2"></i> Role-based access:
+                        viewer, author, admin, admin-author</li>
+                    <li class="list-group-item"><i class="fas fa-search text-dark me-2"></i> Powerful search using
+                        MongoDB text indexing</li>
+                    <li class="list-group-item"><i class="fas fa-image text-success me-2"></i> Profile and cover image
+                        uploads for enhanced UI</li>
+                </ul>
+            </section>
+
+            <section class="mb-5">
+                <h4>Tech Stack</h4>
+                <div class="row text-center">
+                    <div class="col-md-3"><i class="fab fa-html5 fa-2x text-danger"></i>
+                        <p>HTML</p>
+                    </div>
+                    <div class="col-md-3"><i class="fab fa-css3-alt fa-2x text-primary"></i>
+                        <p>CSS</p>
+                    </div>
+                    <div class="col-md-3"><i class="fab fa-js-square fa-2x text-warning"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="col-md-3"><i class="fab fa-node fa-2x text-success"></i>
+                        <p>Node.js</p>
+                    </div>
+                    <div class="col-md-3"><i class="fas fa-database fa-2x text-dark"></i>
+                        <p>MongoDB</p>
+                    </div>
+                    <div class="col-md-3"><i class="fas fa-shield-alt fa-2x text-secondary"></i>
+                        <p>JWT Auth</p>
+                    </div>
+                    <div class="col-md-3"><i class="fas fa-key fa-2x text-info"></i>
+                        <p>Password Hashing</p>
+                    </div>
+                    <div class="col-md-3"><i class="fas fa-tools fa-2x text-muted"></i>
+                        <p>Express.js</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="border-top pt-4">
+                <h4 class="text-center mb-4">About Me</h4>
+                <div class="d-flex flex-column align-items-center">
+                    <img src="/images/profileJatin.png" alt="Profile Image" class="rounded-circle mb-3" width="120"
+                        height="120">
+                    <h5>Jatin Carpenter</h5>
+                    <p class="text-muted">CSE Student at IET DAVV</p>
+                    <p class="text-center">
+                        <i class="fas fa-graduation-cap text-primary me-2"></i> Aspiring Full Stack Web Developer
+                        specializing in the <strong>MERN Stack</strong> (MongoDB, Express.js, React, Node.js).<br>
+                        <i class="fas fa-laptop-code text-success me-2"></i> Currently diving deep into <strong>web
+                            technologies</strong> and modern JavaScript frameworks.<br>
+                        <i class="fas fa-code text-warning me-2"></i> Enthusiast of <strong>competitive
+                            programming</strong> and core computer science concepts.<br>
+                        <i class="fas fa-rocket text-danger me-2"></i> Passionate about building dynamic, scalable, and
+                        responsive web applications.<br>
+                        <i class="fas fa-bullseye text-info me-2"></i> Focused on pursuing a professional career as a
+                        <strong>Full Stack Web Developer</strong>.
+                    </p>
+                    <div class="d-flex gap-3 mt-2">
+                        <a href="https://github.com/JatinCarpenter07" target="_blank"><i
+                                class="fab fa-github fa-lg text-dark"></i></a>
+                        <a href="https://in.linkedin.com/in/jatin-carpenter-b769a0260" target="_blank"><i
+                                class="fab fa-linkedin fa-lg text-dark"></i></a>
+                        <a href="mailto:jatincarpentar64@gmail.com"><i class="fas fa-envelope fa-lg text-dark"></i></a>
+                        <a href="tel:+916264387622"><i class="fas fa-phone fa-lg text-dark"></i></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <%- include('./partials/footer') %>
+            <%- include('./partials/script') %>
+</body>
+
+</html>

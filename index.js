@@ -27,9 +27,25 @@ const port = 5600;
 // Database Connection
 // ==============================
 console.log("Connecting to database...");
-mongoose.connect("mongodb://127.0.0.1:27017/blogifyDB")
-    .then(() => console.log("DB Connected"))
-    .catch((error) => { console.log(`error : ${error}`) });
+
+// Replace with your actual Atlas URI
+const MONGO_URI = "mongodb+srv://jatincarpentar64:vXVGnk6oujhrrMkW@clusterblogify.fpvy6ga.mongodb.net/vercelMongoDB?retryWrites=true&w=majority&appName=ClusterBlogify";
+
+const connectDB = async () => {
+  try {
+    await mongoose.connect(MONGO_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    console.log("✅ Mongoose connected to MongoDB Atlas");
+  } catch (error) {
+    console.error("❌ Mongoose connection error:", error);
+    process.exit(1);
+  }
+};
+
+connectDB();
+
 
 // ==============================
 // Server Configuration

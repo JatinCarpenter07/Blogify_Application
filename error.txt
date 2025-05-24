@@ -37,3 +37,81 @@
   "Method": "POST"
 }
 
+{
+  "Time": "25/05/2025, 01:29:58",
+  "Error": {
+    "name": "MongoServerError",
+    "message": "text index required for $text query",
+    "stack": "MongoServerError: text index required for $text query\n    at Connection.sendCommand (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\connection.js:299:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async Connection.command (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\connection.js:327:26)\n    at async Server.command (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\sdam\\server.js:168:29)\n    at async FindOperation.execute (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\find.js:36:16)\n    at async tryOperation (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:207:20)\n    at async executeOperation (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:75:16)\n    at async FindCursor._initialize (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cursor\\find_cursor.js:61:26)\n    at async FindCursor.cursorInit (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cursor\\abstract_cursor.js:633:27)\n    at async FindCursor.fetchBatch (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cursor\\abstract_cursor.js:667:13)"
+  },
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/search?query=premanand+ji",
+  "Method": "GET"
+}
+
+{
+  "Time": "25/05/2025, 01:30:05",
+  "Error": {
+    "name": "MongoServerError",
+    "message": "text index required for $text query",
+    "stack": "MongoServerError: text index required for $text query\n    at Connection.sendCommand (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\connection.js:299:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async Connection.command (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\connection.js:327:26)\n    at async Server.command (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\sdam\\server.js:168:29)\n    at async FindOperation.execute (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\find.js:36:16)\n    at async tryOperation (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:207:20)\n    at async executeOperation (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:75:16)\n    at async FindCursor._initialize (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cursor\\find_cursor.js:61:26)\n    at async FindCursor.cursorInit (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cursor\\abstract_cursor.js:633:27)\n    at async FindCursor.fetchBatch (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cursor\\abstract_cursor.js:667:13)"
+  },
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/search?query=premanand+ji",
+  "Method": "GET"
+}
+
+{
+  "Time": "25/05/2025, 01:30:15",
+  "Error": {
+    "name": "MongoServerError",
+    "message": "text index required for $text query",
+    "stack": "MongoServerError: text index required for $text query\n    at Connection.sendCommand (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\connection.js:299:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async Connection.command (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\connection.js:327:26)\n    at async Server.command (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\sdam\\server.js:168:29)\n    at async FindOperation.execute (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\find.js:36:16)\n    at async tryOperation (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:207:20)\n    at async executeOperation (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:75:16)\n    at async FindCursor._initialize (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cursor\\find_cursor.js:61:26)\n    at async FindCursor.cursorInit (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cursor\\abstract_cursor.js:633:27)\n    at async FindCursor.fetchBatch (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cursor\\abstract_cursor.js:667:13)"
+  },
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/search?query=premanand+ji",
+  "Method": "GET"
+}
+
+{
+  "Time": "25/05/2025, 01:30:25",
+  "Error": {
+    "name": "MongoServerError",
+    "message": "text index required for $text query",
+    "stack": "MongoServerError: text index required for $text query\n    at Connection.sendCommand (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\connection.js:299:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async Connection.command (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\connection.js:327:26)\n    at async Server.command (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\sdam\\server.js:168:29)\n    at async FindOperation.execute (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\find.js:36:16)\n    at async tryOperation (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:207:20)\n    at async executeOperation (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:75:16)\n    at async FindCursor._initialize (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cursor\\find_cursor.js:61:26)\n    at async FindCursor.cursorInit (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cursor\\abstract_cursor.js:633:27)\n    at async FindCursor.fetchBatch (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cursor\\abstract_cursor.js:667:13)"
+  },
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/search?query=jatin",
+  "Method": "GET"
+}
+
+{
+  "Time": "25/05/2025, 01:30:34",
+  "Error": {
+    "name": "MongoServerError",
+    "message": "text index required for $text query",
+    "stack": "MongoServerError: text index required for $text query\n    at Connection.sendCommand (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\connection.js:299:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async Connection.command (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\connection.js:327:26)\n    at async Server.command (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\sdam\\server.js:168:29)\n    at async FindOperation.execute (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\find.js:36:16)\n    at async tryOperation (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:207:20)\n    at async executeOperation (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:75:16)\n    at async FindCursor._initialize (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cursor\\find_cursor.js:61:26)\n    at async FindCursor.cursorInit (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cursor\\abstract_cursor.js:633:27)\n    at async FindCursor.fetchBatch (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cursor\\abstract_cursor.js:667:13)"
+  },
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/search?query=premanand+ji",
+  "Method": "GET"
+}
+
+{
+  "Time": "25/05/2025, 01:31:22",
+  "Error": {
+    "name": "MongoServerError",
+    "message": "text index required for $text query",
+    "stack": "MongoServerError: text index required for $text query\n    at Connection.sendCommand (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\connection.js:299:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async Connection.command (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\connection.js:327:26)\n    at async Server.command (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\sdam\\server.js:168:29)\n    at async FindOperation.execute (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\find.js:36:16)\n    at async tryOperation (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:207:20)\n    at async executeOperation (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:75:16)\n    at async FindCursor._initialize (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cursor\\find_cursor.js:61:26)\n    at async FindCursor.cursorInit (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cursor\\abstract_cursor.js:633:27)\n    at async FindCursor.fetchBatch (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cursor\\abstract_cursor.js:667:13)"
+  },
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/search?query=hitopasana",
+  "Method": "GET"
+}
+

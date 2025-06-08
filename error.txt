@@ -115,3 +115,68 @@
   "Method": "GET"
 }
 
+{
+  "Time": "08/06/2025, 08:30:02",
+  "Error": {
+    "name": "Error",
+    "message": "ENOENT: no such file or directory, unlink 'E:\\NodeJs\\Node_16_Blogging_Application\\public\\https:\\res.cloudinary.com\\dbrzb83mn\\image\\upload\\v1749351230\\blogify_uploads\\witswgu03vpf7yjkbxfe.png'",
+    "stack": "Error: ENOENT: no such file or directory, unlink 'E:\\NodeJs\\Node_16_Blogging_Application\\public\\https:\\res.cloudinary.com\\dbrzb83mn\\image\\upload\\v1749351230\\blogify_uploads\\witswgu03vpf7yjkbxfe.png'\n    at Object.unlinkSync (node:fs:1953:11)\n    at changeBlog (E:\\NodeJs\\Node_16_Blogging_Application\\controllers\\blog.js:125:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+  },
+  "IP": "127.0.0.1",
+  "User": "Jitendra Carpenter",
+  "Path": "/blog/6844fb3f7fd004a945b60e3d/edit",
+  "Method": "POST"
+}
+
+{
+  "Time": "08/06/2025, 08:49:34",
+  "Error": {
+    "name": "Error",
+    "message": "ENOENT: no such file or directory, unlink 'E:\\NodeJs\\Node_16_Blogging_Application\\public\\https:\\res.cloudinary.com\\dbrzb83mn\\image\\upload\\v1749352598\\blogify_uploads\\ioomtsc8xjfil3zlslug.jpg'",
+    "stack": "Error: ENOENT: no such file or directory, unlink 'E:\\NodeJs\\Node_16_Blogging_Application\\public\\https:\\res.cloudinary.com\\dbrzb83mn\\image\\upload\\v1749352598\\blogify_uploads\\ioomtsc8xjfil3zlslug.jpg'\n    at Object.unlinkSync (node:fs:1953:11)\n    at deleteTheBlog (E:\\NodeJs\\Node_16_Blogging_Application\\controllers\\blog.js:214:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+  },
+  "IP": "127.0.0.1",
+  "User": "Jitendra Carpenter",
+  "Path": "/blog/6844fddd119a13eac22871f4/delete",
+  "Method": "GET"
+}
+
+{
+  "Time": "08/06/2025, 10:25:01",
+  "Error": {
+    "name": "Error",
+    "message": "ENOENT: no such file or directory, unlink 'E:\\NodeJs\\Node_16_Blogging_Application\\public\\https:\\res.cloudinary.com\\dbrzb83mn\\image\\upload\\v1749358433\\blogify_uploads\\gnwpzgcbmsn2igvnenfn.png'",
+    "stack": "Error: ENOENT: no such file or directory, unlink 'E:\\NodeJs\\Node_16_Blogging_Application\\public\\https:\\res.cloudinary.com\\dbrzb83mn\\image\\upload\\v1749358433\\blogify_uploads\\gnwpzgcbmsn2igvnenfn.png'\n    at Object.unlinkSync (node:fs:1953:11)\n    at E:\\NodeJs\\Node_16_Blogging_Application\\controllers\\account.js:106:16\n    at Array.forEach (<anonymous>)\n    at deleteProfile (E:\\NodeJs\\Node_16_Blogging_Application\\controllers\\account.js:103:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+  },
+  "IP": "127.0.0.1",
+  "User": "Kanika Carpenter",
+  "Path": "/account/profile/delete",
+  "Method": "GET"
+}
+
+{
+  "Time": "08/06/2025, 10:25:12",
+  "Error": {
+    "name": "Error",
+    "message": "ENOENT: no such file or directory, unlink 'E:\\NodeJs\\Node_16_Blogging_Application\\public\\https:\\res.cloudinary.com\\dbrzb83mn\\image\\upload\\v1749358433\\blogify_uploads\\gnwpzgcbmsn2igvnenfn.png'",
+    "stack": "Error: ENOENT: no such file or directory, unlink 'E:\\NodeJs\\Node_16_Blogging_Application\\public\\https:\\res.cloudinary.com\\dbrzb83mn\\image\\upload\\v1749358433\\blogify_uploads\\gnwpzgcbmsn2igvnenfn.png'\n    at Object.unlinkSync (node:fs:1953:11)\n    at E:\\NodeJs\\Node_16_Blogging_Application\\controllers\\account.js:106:16\n    at Array.forEach (<anonymous>)\n    at deleteProfile (E:\\NodeJs\\Node_16_Blogging_Application\\controllers\\account.js:103:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+  },
+  "IP": "127.0.0.1",
+  "User": "Kanika Carpenter",
+  "Path": "/account/profile/delete",
+  "Method": "GET"
+}
+
+{
+  "Time": "08/06/2025, 10:54:01",
+  "Error": {
+    "name": "Error",
+    "message": "User not found! Not Registered Email",
+    "stack": "Error: User not found! Not Registered Email\n    at Function.matchPasswordAndGenerateToken (E:\\NodeJs\\Node_16_Blogging_Application\\models\\usersData.js:91:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async userLogIn (E:\\NodeJs\\Node_16_Blogging_Application\\controllers\\user.js:45:23)"
+  },
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/login",
+  "Method": "POST"
+}
+

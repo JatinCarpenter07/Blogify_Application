@@ -13,16 +13,7 @@ const {
 
 const blogRouter = express.Router();
 
-const storage = multer.diskStorage({
-    destination: function (req, file, cb) {
-        console.log("Setting file upload destination...");
-        cb(null, path.join(__dirname, "..", "/public/uploads"));
-    },
-    filename: function (req, file, cb) {
-        console.log("Generating file name for upload...");
-        cb(null, `${Date.now()}-${file.originalname}`);
-    }
-});
+const {storage} =require("../services/cloudinary");
 
 const upload = multer({ storage: storage });
 

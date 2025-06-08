@@ -15,7 +15,8 @@ async function userSignUp(req, res) {
         };
 
         if (req.file) {
-            userData.profileImage = `/uploads/${req.file.filename}`;
+            userData.profileImage = req.file.path;
+            userData.imagePublicId=req.file.filename;
             console.log("userSignUp : User uploaded a profile image");
         }
 

@@ -4,6 +4,7 @@ const usersDataModel = require('../models/usersData');
 const path = require('path');
 const fs = require('fs');
 const { errorLog } = require('../middlewares');
+const { cloudinary } = require('../services/cloudinary');
 
 
 async function provideTheAccountPage(req, res) {
@@ -43,20 +44,24 @@ async function editProfile(req, res) {
         const { Name, email, password } = req.body;
         if (req.file) {
             console.log("editProfile : File uploaded, updating profile with image.");
-            const profilePath = path.join(__dirname, "../public", req.user.profileImage);
-            try {
-                console.log("editProfile : Deleting previous profile image at", profilePath);
-                fs.unlinkSync(profilePath);
-            }
-            catch (error) {
-                errorLog(error, req);
+            const imagePublicId = req.user.imagePublicId;
+            if (imagePublicId) {
+                try {
+                    console.log("editProfile : Deleting previous profile image at", imagePublicId);
+                    await cloudinary.uploader.destroy(imagePublicId);
+                    console.log("Old profile deleted successfully.")
+                }
+                catch (error) {
+                    errorLog(error, req);
+                }
             }
             await usersDataModel.updateOne({ _id: req.user._id }, {
                 $set: {
                     Name: Name,
                     email: email,
                     password: password,
-                    profileImage: `/uploads/${req.file.filename}`
+                    profileImage: req.file.path,
+                    imagePublicId: req.file.filename
                 }
             });
         }
@@ -95,22 +100,36 @@ async function deleteProfile(req, res) {
         const _id = req.user._id;
         const blogs = await blogsDataModel.find({ createdBy: _id });
         console.log("deleteProfile : Found blogs to delete for user", _id);
-        blogs.forEach(blog => {
-            const imagePath = path.join(__dirname, "../public", blog.coverImageUrl);
-            console.log("deleteProfile : Deleting blog image at", imagePath);
-            fs.unlinkSync(imagePath);
+        blogs.forEach(async (blog) => {
+            let imagePublicId = blog.imagePublicId;
+            if (imagePublicId) {
+                console.log("changeTheBlog : Deleting blog previous cover image at", imagePublicId);
+                try {
+                    await cloudinary.uploader.destroy(imagePublicId);
+                    console.log("Deleted cover Image");
+
+                }
+                catch (error) {
+                    console.log("deleteTheBlog : Error deleting image", error);
+                    errorLog(error, req);
+                }
+            }
+            await commentsDataModel.deleteMany({ relatedBlog: blog._id });
         });
         await blogsDataModel.deleteMany({ createdBy: _id });
         console.log("deleteProfile : Deleted blogs for user", _id);
         await commentsDataModel.deleteMany({ createdBy: _id });
         console.log("deleteProfile : Deleted comments for user", _id);
-        const profilePath = path.join(__dirname, "../public", req.user.profileImage);
-        try {
-            console.log("deleteProfile : Deleting profile image at", profilePath);
-            fs.unlinkSync(profilePath);
-        }
-        catch (error) {
-            errorLog(error, req);
+        const imagePublicId = req.user.imagePublicId;
+        if (imagePublicId) {
+            try {
+                console.log("editProfile : Deleting previous profile image at", imagePublicId);
+                await cloudinary.uploader.destroy(imagePublicId);
+                console.log("Old profile deleted successfully.")
+            }
+            catch (error) {
+                errorLog(error, req);
+            }
         }
         await usersDataModel.deleteOne({ _id });
         console.log("deleteProfile : Successfully deleted user profile.");

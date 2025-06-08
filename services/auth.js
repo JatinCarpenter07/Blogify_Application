@@ -9,7 +9,8 @@ function builtTheToken(user){
         Name:user.Name,
         email:user.email,
         profileImage:user.profileImage,
-        role:user.role 
+        role:user.role,
+        imagePublicId:user.imagePublicId
     };
 
     const token = jwt.sign(plainObject, secretKey);

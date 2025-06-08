@@ -4,6 +4,7 @@ const usersDataModel = require("../models/usersData");
 const path = require('path');
 const fs = require('fs');
 const { errorLog } = require("../middlewares");
+const { cloudinary } = require("../services/cloudinary");
 
 async function provideDashBlogs(req, res) {
     try {
@@ -95,7 +96,7 @@ async function removeAdmin(req, res) {
             await usersDataModel.updateOne({ _id }, { $set: { role: "author" } });
         else
             await usersDataModel.updateOne({ _id }, { $set: { role: "viewer" } });
-        
+
         if (_id == req.user._id)
             return res.redirect('/');
         if (req.session.previousUrl) {
@@ -144,20 +145,34 @@ async function removeUser(req, res) {
             return res.redirect("/admin/dashboard/users");
         }
         const blogs = await blogsDataModel.find({ createdBy: _id });
-        blogs.forEach(blog => {
-            const imagePath = path.join(__dirname, "../public", blog.coverImageUrl);
-            console.log("removeUser : Deleting blog image at", imagePath);
-            fs.unlinkSync(imagePath);
+        blogs.forEach(async (blog) => {
+            let imagePublicId = blog.imagePublicId;
+            if (imagePublicId) {
+                console.log("changeTheBlog : Deleting blog previous cover image at", imagePublicId);
+                try {
+                    await cloudinary.uploader.destroy(imagePublicId);
+                    console.log("Deleted cover Image");
+
+                }
+                catch (error) {
+                    console.log("deleteTheBlog : Error deleting image", error);
+                    errorLog(error, req);
+                }
+            }
+            await commentsDataModel.deleteMany({ relatedBlog: blog._id });
         });
         await blogsDataModel.deleteMany({ createdBy: _id });
         await commentsDataModel.deleteMany({ createdBy: _id });
-        const profilePath = path.join(__dirname, "../public", user[0].profileImage);
-        try {
-            console.log("removeUser : Deleting profile image at", profilePath);
-            fs.unlinkSync(profilePath);
-        }
-        catch (error) {
-            errorLog(error, req);
+        const imagePublicId = user[0].imagePublicId;
+        if (imagePublicId) {
+            try {
+                console.log("editProfile : Deleting previous profile image at", imagePublicId);
+                await cloudinary.uploader.destroy(imagePublicId);
+                console.log("Old profile deleted successfully.")
+            }
+            catch (error) {
+                errorLog(error, req);
+            }
         }
         await usersDataModel.deleteOne({ _id });
         if (user[0]._id == req.user._id)

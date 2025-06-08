@@ -31,6 +31,9 @@ const usersDataSchemma=new mongoose.Schema({
     profileImage:{
         type:String,
         default:'/images/defaultProfile.png'
+    },
+    imagePublicId:{
+        type:String,
     }
 },{
     timestamps:true,

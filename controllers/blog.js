@@ -4,6 +4,7 @@ const commentsDataModel = require('../models/commentsData');
 const usersDataModel = require('../models/usersData');
 const fs = require('fs');
 const { errorLog } = require('../middlewares');
+const { cloudinary } = require('../services/cloudinary');
 
 async function addBlog(req, res) {
     try {
@@ -14,12 +15,15 @@ async function addBlog(req, res) {
             res.redirect(302, "/user/login");
             return;
         }
+        console.log("Req.body :", req.body);
+        console.log("Req.file :", req.file);
         console.log("addBlog : Creating a new blog");
         const newBlog = await blogsDataModel.create({
             title: req.body.title,
             description: req.body.description,
             body: req.body.body,
-            coverImageUrl: `uploads/${req.file.filename}`,
+            coverImageUrl: req.file.path,
+            imagePublicId: req.file.filename,
             createdBy: req.user._id
         });
         await usersDataModel.updateOne({ _id: req.user._id }, { $inc: { count: 1 } });
@@ -116,14 +120,20 @@ async function changeBlog(req, res) {
             console.log("changeBlog : User is not the creator of the blog, redirecting to homepage");
             return res.redirect("/");
         }
-        const imagePath = path.join(__dirname, "../public", blog[0].coverImageUrl);
-        console.log("changeTheBlog : Deleting blog previous cover image at", imagePath);
-        try {
-            fs.unlinkSync(imagePath);
-        }
-        catch (error) {
-            console.log("changeTheBlog : Error deleting previous coverImage", error);
-            errorLog(error, req);
+        console.log("blog[0] :", blog[0]);
+        let imagePublicId = blog[0].imagePublicId;
+        if (imagePublicId) {
+            console.log("changeTheBlog : Deleting blog previous cover image at", imagePublicId);
+            try {
+
+                await cloudinary.uploader.destroy(imagePublicId);
+                console.log("Deleted cover old cover Image");
+
+            }
+            catch (error) {
+                console.log("changeTheBlog : Error deleting previous coverImage", error);
+                errorLog(error, req);
+            }
         }
         console.log("changeBlog : Updating blog with new data");
         await blogsDataModel.updateOne({ _id }, {
@@ -131,7 +141,8 @@ async function changeBlog(req, res) {
                 title: req.body.title,
                 description: req.body.description,
                 body: req.body.body,
-                coverImageUrl: `uploads/${req.file.filename}`
+                coverImageUrl: req.file.path,
+                imagePublicId: req.file.filename,
             }
         })
         res.redirect(302, `/blog/${_id}`);
@@ -199,14 +210,18 @@ async function deleteTheBlog(req, res) {
             console.log("deleteTheBlog : User is not the creator of the blog, redirecting to homepage");
             return res.redirect("/");
         }
-        const imagePath = path.join(__dirname, "../public", blog[0].coverImageUrl);
-        console.log("deleteTheBlog : Deleting blog cover image at", imagePath);
-        try {
-            fs.unlinkSync(imagePath);
-        }
-        catch (error) {
-            console.log("deleteTheBlog : Error deleting image", error);
-            errorLog(error, req);
+        let imagePublicId = blog[0].imagePublicId;
+        if (imagePublicId) {
+            console.log("changeTheBlog : Deleting blog previous cover image at", imagePublicId);
+            try {
+                await cloudinary.uploader.destroy(imagePublicId);
+                console.log("Deleted cover Image");
+
+            }
+            catch (error) {
+                console.log("deleteTheBlog : Error deleting image", error);
+                errorLog(error, req);
+            }
         }
         await usersDataModel.updateOne({ _id: blog[0].createdBy._id }, { $inc: { count: -1 } });
         let user = await usersDataModel.find({ _id: blog[0].createdBy._id });

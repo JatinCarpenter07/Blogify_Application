@@ -10470,3 +10470,83 @@
   "Method": "GET"
 }
 
+{
+  "Time": "08/06/2025, 11:36:17",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/account",
+  "Method": "GET"
+}
+
+{
+  "Time": "08/06/2025, 11:36:22",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/admin/dashboard",
+  "Method": "GET"
+}
+
+{
+  "Time": "08/06/2025, 11:36:24",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/admin/dashboard/users",
+  "Method": "GET"
+}
+
+{
+  "Time": "08/06/2025, 11:36:26",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "08/06/2025, 11:36:29",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/account",
+  "Method": "GET"
+}
+
+{
+  "Time": "08/06/2025, 11:36:31",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/account/profile",
+  "Method": "GET"
+}
+
+{
+  "Time": "08/06/2025, 11:36:32",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/account/profile/edit",
+  "Method": "GET"
+}
+
+{
+  "Time": "08/06/2025, 11:36:48",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/account/profile/edit",
+  "Method": "POST"
+}
+
+{
+  "Time": "08/06/2025, 11:36:52",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/account/profile",
+  "Method": "GET"
+}
+
+{
+  "Time": "08/06/2025, 11:37:17",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/",
+  "Method": "GET"
+}
+

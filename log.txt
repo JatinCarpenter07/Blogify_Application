@@ -10550,3 +10550,35 @@
   "Method": "GET"
 }
 
+{
+  "Time": "08/06/2025, 11:53:27",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/blog/addBlog",
+  "Method": "GET"
+}
+
+{
+  "Time": "08/06/2025, 11:53:42",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/blog",
+  "Method": "POST"
+}
+
+{
+  "Time": "08/06/2025, 11:53:45",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/blog/68452c7081c5225bac0729da",
+  "Method": "GET"
+}
+
+{
+  "Time": "08/06/2025, 11:53:48",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/",
+  "Method": "GET"
+}
+

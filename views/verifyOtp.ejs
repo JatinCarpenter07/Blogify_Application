@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head') %>
+        <title>Email-Verification</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <%- include('./partials/navbar') %>
+    <% if(locals?.email){ %>
+        <p>Enter OTP for verification of Email Address <%= email %></p>
+    <% } %>
+    <form action="/user/verifyOtp/<%=email%>" method="post" class="container mt-4">
+        <div class="mb-3">
+          <label for="otp" class="form-label">Enter OTP</label>
+          <input type="text" class="form-control" name="otp" aria-describedby="emailHelp" required>
+        </div>
+        <button type="submit" class="btn btn-dark">Verify</button>
+    </form>
+
+    <%- include('./partials/footer') %>
+    <%- include('./partials/script') %>
+</body>
+
+</html>

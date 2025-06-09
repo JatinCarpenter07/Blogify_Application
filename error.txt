@@ -180,3 +180,120 @@
   "Method": "POST"
 }
 
+{
+  "Time": "09/06/2025, 01:01:39",
+  "Error": {
+    "name": "ReferenceError",
+    "message": "expireTime is not defined",
+    "stack": "ReferenceError: expireTime is not defined\n    at userSignUp (E:\\NodeJs\\Node_16_Blogging_Application\\controllers\\user.js:23:17)\n    at E:\\NodeJs\\Node_16_Blogging_Application\\routes\\user.js:14:5\n    at Layer.handleRequest (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\router\\lib\\route.js:157:13)\n    at done (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\multer\\lib\\make-middleware.js:47:7)\n    at indicateDone (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\multer\\lib\\make-middleware.js:51:68)\n    at E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\multer\\lib\\make-middleware.js:157:11\n    at CloudinaryStorage.<anonymous> (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\multer-storage-cloudinary\\lib\\index.js:107:25)\n    at step (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\multer-storage-cloudinary\\lib\\index.js:33:23)\n    at Object.next (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\multer-storage-cloudinary\\lib\\index.js:14:53)"
+  },
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/signup",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 01:02:49",
+  "Error": {
+    "name": "TypeError",
+    "message": "Cannot create property '_locals' on string '507802'",
+    "stack": "TypeError: Cannot create property '_locals' on string '507802'\n    at ServerResponse.render (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\express\\lib\\response.js:900:16)\n    at userSignUp (E:\\NodeJs\\Node_16_Blogging_Application\\controllers\\user.js:32:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+  },
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/signup",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 01:03:24",
+  "Error": {
+    "name": "MongoServerError",
+    "message": "Already registered with this email",
+    "stack": "MongoServerError: E11000 duplicate key error collection: vercelMongoDB.usersData index: email_1 dup key: { email: \"umesh98penter@gmail.com\" }\n    at InsertOneOperation.execute (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\insert.js:51:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async tryOperation (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:207:20)\n    at async executeOperation (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:75:16)\n    at async Collection.insertOne (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\collection.js:157:16)"
+  },
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/signup",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 01:07:24",
+  "Error": {
+    "name": "TypeError",
+    "message": "Cannot create property '_locals' on string '153173'",
+    "stack": "TypeError: Cannot create property '_locals' on string '153173'\n    at ServerResponse.render (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\express\\lib\\response.js:900:16)\n    at userSignUp (E:\\NodeJs\\Node_16_Blogging_Application\\controllers\\user.js:32:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+  },
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/signup",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 01:08:06",
+  "Error": {
+    "name": "MongoServerError",
+    "message": "Already registered with this email",
+    "stack": "MongoServerError: E11000 duplicate key error collection: vercelMongoDB.usersData index: email_1 dup key: { email: \"umesh98penter@gmail.com\" }\n    at InsertOneOperation.execute (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\insert.js:51:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async tryOperation (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:207:20)\n    at async executeOperation (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:75:16)\n    at async Collection.insertOne (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\collection.js:157:16)"
+  },
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/signup",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:57:21",
+  "Error": {
+    "name": "Error",
+    "message": "User not found! Not Registered Email",
+    "stack": "Error: User not found! Not Registered Email\n    at Function.matchPasswordAndGenerateToken (E:\\NodeJs\\Node_16_Blogging_Application\\models\\usersData.js:91:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async userLogIn (E:\\NodeJs\\Node_16_Blogging_Application\\controllers\\user.js:54:23)"
+  },
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/login",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:58:46",
+  "Error": {
+    "name": "Error",
+    "message": "Incorrect Password",
+    "stack": "Error: Incorrect Password\n    at Function.matchPasswordAndGenerateToken (E:\\NodeJs\\Node_16_Blogging_Application\\models\\usersData.js:103:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async userLogIn (E:\\NodeJs\\Node_16_Blogging_Application\\controllers\\user.js:54:23)"
+  },
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/login",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:58:55",
+  "Error": {
+    "name": "Error",
+    "message": "Incorrect Password",
+    "stack": "Error: Incorrect Password\n    at Function.matchPasswordAndGenerateToken (E:\\NodeJs\\Node_16_Blogging_Application\\models\\usersData.js:103:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async userLogIn (E:\\NodeJs\\Node_16_Blogging_Application\\controllers\\user.js:54:23)"
+  },
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/login",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:59:39",
+  "Error": {
+    "name": "Error",
+    "message": "User not found! Not Registered Email",
+    "stack": "Error: User not found! Not Registered Email\n    at Function.matchPasswordAndGenerateToken (E:\\NodeJs\\Node_16_Blogging_Application\\models\\usersData.js:91:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async userLogIn (E:\\NodeJs\\Node_16_Blogging_Application\\controllers\\user.js:54:23)"
+  },
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/login",
+  "Method": "POST"
+}
+

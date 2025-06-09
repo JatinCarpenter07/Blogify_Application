@@ -5,6 +5,8 @@ const path = require('path');
 const fs = require('fs');
 const { errorLog } = require('../middlewares');
 const { cloudinary } = require('../services/cloudinary');
+const { render } = require('ejs');
+const { error } = require('console');
 
 
 async function provideTheAccountPage(req, res) {
@@ -98,6 +100,14 @@ async function deleteProfile(req, res) {
             return;
         }
         const _id = req.user._id;
+        const role=req.user.role;
+        const noOfAdminadminAuthor = await usersDataModel.countDocuments({ role: { $in: ['admin', 'adminAuthor'] } });
+        console.log("noOfAdminadminAuthor :",noOfAdminadminAuthor);
+        if((role=='admin' || role=='adminAuthor') && noOfAdminadminAuthor<=1){
+            const error = new Error("There should be at least 1 Admin or AdminAuthor.");
+            res.render("profile",error);
+            return ;
+        }
         const blogs = await blogsDataModel.find({ createdBy: _id });
         console.log("deleteProfile : Found blogs to delete for user", _id);
         blogs.forEach(async (blog) => {

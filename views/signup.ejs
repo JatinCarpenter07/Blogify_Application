@@ -6,14 +6,13 @@
 </head>
 <body class="d-flex flex-column min-vh-100">
     <%- include('./partials/navbar') %>
-    <form action="/user/signup" method="post" class="container mt-4" enctype="multipart/form-data">
+    <% if(locals?.email){ %>
+        <p>Enter Remaining Details for the Account : <%= email %></p>
+    <% } %>
+    <form action="/user/signup/<%=email%>" method="post" class="container mt-4" enctype="multipart/form-data">
         <div class="mb-3">
           <label for="Name" class="form-label">Name</label>
           <input type="text" class="form-control" name="Name" aria-describedby="emailHelp" required>
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email address</label>
-          <input type="email" class="form-control" name="email" aria-describedby="emailHelp" required>
         </div>
         <div class="mb-3">
           <label for="password" class="form-label">Password</label>

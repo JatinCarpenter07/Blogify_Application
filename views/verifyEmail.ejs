@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head') %>
+        <title>Email-Verification</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <%- include('./partials/navbar') %>
+
+    <form action="/user/verifyEmail" method="post" class="container mt-4">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" name="email" aria-describedby="emailHelp" required>
+        </div>
+        <button type="submit" class="btn btn-dark">Generate OTP</button>
+    </form>
+
+    <%- include('./partials/footer') %>
+    <%- include('./partials/script') %>
+</body>
+
+</html>

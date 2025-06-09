@@ -34,7 +34,7 @@ const usersDataSchemma=new mongoose.Schema({
     },
     imagePublicId:{
         type:String,
-    }
+    },
 },{
     timestamps:true,
     strict:false

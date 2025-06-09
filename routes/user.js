@@ -1,15 +1,26 @@
 const express = require('express');
 const userRouter = express.Router();
-const { userSignUp, userLogIn, userLogout, provideCustomizedAuthor } = require('../controllers/user');
+const { userSignUp, userLogIn, userLogout, provideCustomizedAuthor, verifyEmail, verifyOtp } = require('../controllers/user');
 const { render } = require('ejs');
 const { upload } = require('./blog');
 
-userRouter.get('/signup', (req, res) => {
-    console.log("GET /signup - Rendering signup page");
-    res.render("signup");
+
+userRouter.get('/verifyEmail', (req, res) => {
+    console.log("GET /verifyEmail - Rendering verifyEmail page");
+    res.render("verifyEmail");
 });
 
-userRouter.post('/signup', upload.single("profileImage"), (req, res, next) => {
+userRouter.post('/verifyEmail', (req, res,next) => {
+    console.log("POST /verifyEmail - Submitting emails details");
+    verifyEmail(req,res,next);
+});
+
+userRouter.post('/verifyOtp/:emailEntered', (req, res,next) => {
+    console.log("POST /verifyOtp -verifying otp details");
+    verifyOtp(req,res,next);
+});
+
+userRouter.post('/signup/:emailEntered', upload.single("profileImage"), (req, res, next) => {
     console.log("POST /signup - Submitting signup form");
     userSignUp(req, res, next);
 });

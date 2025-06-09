@@ -10582,3 +10582,1027 @@
   "Method": "GET"
 }
 
+{
+  "Time": "09/06/2025, 00:59:02",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 00:59:08",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/login",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 00:59:19",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/login",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 00:59:19",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 00:59:24",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/account",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 00:59:26",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/admin/dashboard",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 00:59:29",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/admin/dashboard/users",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 00:59:31",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 00:59:39",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/user/logout",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 00:59:39",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 00:59:43",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/signup",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 01:01:34",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/signup",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 01:02:45",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/signup",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 01:03:03",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/signup",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 01:03:06",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 01:03:08",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/signup",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 01:03:20",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/signup",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 01:07:20",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/signup",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 01:07:40",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 01:07:42",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/signup",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 01:08:02",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/signup",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 09:27:55",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/login",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 09:28:00",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/login",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 09:28:00",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 09:28:03",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/account",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 09:28:05",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/account/profile",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 09:28:06",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/account/profile/delete",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 09:28:08",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/logout",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 09:28:08",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 09:37:04",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/signup",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 10:58:02",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 10:58:05",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/login",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 10:58:10",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 10:58:13",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 10:58:18",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:01:13",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:01:15",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:01:18",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:02:20",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:02:23",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:02:26",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:02:29",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:04:22",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:04:24",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:04:27",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:07:30",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:07:31",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:07:34",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:11:35",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:11:36",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:11:40",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:13:15",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:13:30",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:13:30",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:13:32",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:13:35",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:16:11",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:16:16",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:16:19",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:20:48",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:20:51",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:24:44",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:24:46",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:24:49",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:30:47",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:30:48",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:30:53",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:32:41",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:32:44",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:36:48",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:38:48",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:38:50",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:38:53",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:41:26",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:41:28",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:41:32",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:41:56",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyOtp/jatincarpentar64@gmail.com",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:42:31",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/signup/jatincarpentar64@gmail.com",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:44:40",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:44:42",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:44:45",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:44:52",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:47:04",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:47:22",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyOtp/jatincarpentar64@gmail.com",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:47:34",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/signup/jatincarpentar64@gmail.com",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:49:05",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:49:06",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:49:10",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:49:25",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyOtp/jatincarpentar64@gmail.com",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:49:45",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/signup/jatincarpentar64@gmail.com",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:54:58",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:55:00",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:55:17",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:55:35",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyOtp/jatincarpentar64@gmail.com",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:55:51",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/signup/jatincarpentar64@gmail.com",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:55:53",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:55:56",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/login",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:56:00",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/login",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:56:00",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:57:01",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/.well-known/appspecific/com.chrome.devtools.json",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:57:11",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:57:11",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/.well-known/appspecific/com.chrome.devtools.json",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:57:15",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:57:15",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/.well-known/appspecific/com.chrome.devtools.json",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:57:17",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/login",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:57:17",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/.well-known/appspecific/com.chrome.devtools.json",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:57:21",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/login",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:57:21",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/.well-known/appspecific/com.chrome.devtools.json",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:57:23",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:57:23",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/.well-known/appspecific/com.chrome.devtools.json",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:57:31",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:57:44",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyOtp/jatincarpentar64@gmail.com",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:57:50",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:58:08",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyOtp/jatincarpentar64@gmail.com",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:58:33",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/signup/jatincarpentar64@gmail.com",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:58:35",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:58:39",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/login",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:58:46",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/login",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:58:55",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/login",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:59:39",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/login",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 11:59:41",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 11:59:45",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 12:00:04",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyOtp/jatincarpentar64@gmail.com",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 12:00:24",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/signup/jatincarpentar64@gmail.com",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 12:00:27",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 12:00:29",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/login",
+  "Method": "GET"
+}
+
+{
+  "Time": "09/06/2025, 12:00:40",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/login",
+  "Method": "POST"
+}
+
+{
+  "Time": "09/06/2025, 12:00:40",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/",
+  "Method": "GET"
+}
+

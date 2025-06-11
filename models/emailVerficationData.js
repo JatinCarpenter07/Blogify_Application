@@ -16,6 +16,11 @@ const emailVerificationDataSchema = new mongoose.Schema({
         enum: ['no', 'yes'],
         default: 'no'
     },
+    passwordVerfied:{
+        type: String,
+        enum: ['no', 'yes'],
+        default: 'no'    
+    }
 }, {
     timestamps: true,
     strict: false

@@ -70,16 +70,34 @@
     }
 </script>
 
-<% if(locals.error){ %>
-    <div id="error-message" class="p-3 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-3 m-4">
-        <%= error %>
-    </div>
-    <script>
-        setTimeout(() => {
-            const errorMessage = document.getElementById('error-message');
-            if (errorMessage) {
-                errorMessage.style.display = 'none';
-            }
-        }, 3000);
-    </script>
-    <% } %>
+<% if (locals.error) { %>
+  <div id="error-message" 
+       class="alert alert-danger position-fixed top-0 end-0 mt-5 me-4 shadow rounded-3"
+       style="z-index: 1055; min-width: 300px;">
+    <%= error %>
+  </div>
+  <script>
+    setTimeout(() => {
+      const errorMessage = document.getElementById('error-message');
+      if (errorMessage) {
+        errorMessage.style.display = 'none';
+      }
+    }, 3000);
+  </script>
+<% } %>
+
+<% if (locals.message) { %>
+  <div id="success-message" 
+       class="alert alert-success position-fixed top-0 end-0 mt-5 me-4 shadow rounded-3"
+       style="z-index: 1055; min-width: 300px;">
+    <%= message %>
+  </div>
+  <script>
+    setTimeout(() => {
+      const successMessage = document.getElementById('success-message');
+      if (successMessage) {
+        successMessage.style.display = 'none';
+      }
+    }, 3000);
+  </script>
+<% } %>

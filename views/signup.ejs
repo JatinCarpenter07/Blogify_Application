@@ -4,26 +4,48 @@
     <%- include('./partials/head') %>
     <title>Sign-Up-Page</title>
 </head>
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100 bg-light">
     <%- include('./partials/navbar') %>
-    <% if(locals?.email){ %>
-        <p>Enter Remaining Details for the Account : <%= email %></p>
-    <% } %>
-    <form action="/user/signup/<%=email%>" method="post" class="container mt-4" enctype="multipart/form-data">
-        <div class="mb-3">
-          <label for="Name" class="form-label">Name</label>
-          <input type="text" class="form-control" name="Name" aria-describedby="emailHelp" required>
+
+    <!-- Sign Up Card -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow rounded-4 border-0">
+                    <div class="card-body p-4">
+                        <h4 class="card-title text-center text-primary fw-bold mb-3">Complete Your Registration</h4>
+                        
+                        <% if(locals?.email){ %>
+                            <p class="text-center mb-4">Enter details to finish account creation for: 
+                                <strong class="text-success"><%= email %></strong>
+                            </p>
+                        <% } %>
+
+                        <form action="/user/signup/<%= email %>" method="post" enctype="multipart/form-data">
+                            <div class="mb-3">
+                                <label for="Name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" name="Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Create Password</label>
+                                <input type="password" class="form-control" name="password" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="profileImage" class="form-label">Profile Photo</label>
+                                <input type="file" class="form-control" name="profileImage" accept=".jpg,.png">
+                                <div class="form-text">Accepted formats: .jpg, .png</div>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-success btn-lg">Create Account</button>
+                            </div>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="mb-3">
-          <label for="password" class="form-label">Password</label>
-          <input type="password" class="form-control" name="password" required>
-        </div>
-        <div class="mb-3">
-          <label for="profileImage" class="form-label">Profile Photo</label>
-            <input type="file" class="form-control" name="profileImage" accept=".jpg,.png">
-        </div>
-        <button type="submit" class="btn btn-dark">Submit</button>
-      </form>
+    </div>
+
     <%- include('./partials/footer') %>
     <%- include('./partials/script') %>
 </body>

@@ -8,14 +8,14 @@ const emailVerificationDataModel = require('../models/emailVerficationData');
 async function userSignUp(req, res) {
     try {
         const emailEntered = req.params.emailEntered;
-        console.log("emailEntered :",emailEntered);
+        console.log("emailEntered :", emailEntered);
         const check = await emailVerificationDataModel.find({ email: emailEntered });
         if (check.length && check[0].verified == "yes") {
             console.log("userSignUp : User signing up with email:", emailEntered);
             const { Name, password } = req.body;
             const userData = {
                 Name,
-                email:emailEntered,
+                email: emailEntered,
                 password
             };
             if (req.file) {
@@ -24,7 +24,8 @@ async function userSignUp(req, res) {
                 console.log("userSignUp : User uploaded a profile image");
             }
             await usersDataModel.create(userData);
-            res.redirect('/');
+            const message="User Successfully Registered , Kindly Login"
+            res.render('login',message);
             return;
         }
         else {
@@ -121,7 +122,7 @@ async function verifyEmail(req, res) {
         if (check[0].verified == "yes") {
             const error = new Error("Already registered with this email")
             console.log("Already registered")
-            res.render("verifyEmail", {error});
+            res.render("verifyEmail", { error });
             console.log("again verifyEmail rendered");
             return;
         }
@@ -132,13 +133,14 @@ async function verifyEmail(req, res) {
             try {
                 await sendOTP(email, otp);
                 console.log("OTP sent successfully...");
-                res.render("verifyOtp", {email});
+                const message = "OTP send Successfully."
+                res.render("verifyOtp", { email, message });
                 console.log("verifyOtp Rendered");
                 return;
             }
             catch (error) {
-                console.log("Error in sending otp  :",error)
-                res.render("verifyEmail",{ error});
+                console.log("Error in sending otp  :", error)
+                res.render("verifyEmail", { error });
                 console.log("again verifyEmail rendered");
                 return;
             }
@@ -152,13 +154,14 @@ async function verifyEmail(req, res) {
         try {
             await sendOTP(email, otp);
             console.log("OTP sent successfully...");
-            res.render("verifyOtp", {email});
+            const message = "OTP send Successfully."
+            res.render("verifyOtp", { email, message });
             console.log("verifyOtp Rendered");
             return;
         }
         catch (error) {
-            console.log("Error in sending otp :",error)
-            res.render("verifyEmail", {error});
+            console.log("Error in sending otp :", error)
+            res.render("verifyEmail", { error });
             console.log("again verifyEmail rendered");
             return;
         }
@@ -173,13 +176,86 @@ async function verifyOtp(req, res) {
     if (emailData[0].otp == otpEntered && currentDate <= emailData[0].expireTime) {
         await emailVerificationDataModel.updateOne({ email: emailEntered }, { $set: { verified: "yes" } });
         res.render("signup", {
-            email: emailEntered
+            email: emailEntered,
+            message: "OTP Matched"
         });
         return;
     }
     else {
         const error = new Error("OTP mismatch or Time expired , Again do Verfication");
-        res.render("verifyEmail", {error});
+        res.render("verifyEmail", { error });
+        return;
+    }
+}
+
+async function passEmailVerify(req, res) {
+    const email = req.body.email;
+    const userData = await usersDataModel.find({ email });
+    if (userData.length) {
+        const otp = generateOTP();
+        const expireTime = Date.now() + 10 * 60 * 1000;  //10 Minutes from otp
+        await emailVerificationDataModel.updateOne({ email }, { $set: { otp, expireTime } });
+        try {
+            await sendOTP(email, otp);
+            console.log("OTP sent successfully...");
+            const message = "OTP sent Successfully."
+            res.render("passOtpVerify", { email, message });
+            console.log("passOtpVerify Rendered");
+            return;
+        }
+        catch (error) {
+            console.log("Error in sending otp :", error)
+            res.render("passEmailVerify", { error });
+            console.log("again passEmailVerify rendered");
+            return;
+        }
+    }
+    else {
+        const error = new Error("Not Registered user , Please check your email correctly");
+        res.render("passEmailVerify", error);
+        return;
+    }
+
+}
+
+async function passOtpVerify(req, res) {
+    const emailEntered = req.params.emailEntered;
+    console.log("emailEntered", emailEntered);
+    const otpEntered = req.body.otp;
+    const emailData = await emailVerificationDataModel.find({ email: emailEntered });
+    const currentDate = Date.now();
+    console.log("emailData", emailData);
+    if (emailData[0].otp == otpEntered && currentDate <= emailData[0].expireTime) {
+        await emailVerificationDataModel.updateOne({ email: emailEntered }, { $set: { passwordVerified: "yes" } });
+        res.render("newPassword", {
+            email: emailEntered,
+            message:"OTP Matched."
+        });
+        return;
+    }
+    else {
+        const error = new Error("OTP mismatch or Time expired , Again do Verfication");
+        res.render("passEmailVerify", { error });
+        return;
+    }
+}
+
+async function newPasswordSet(req, res) {
+    const emailEntered = req.params.emailEntered;
+    console.log("emailEntered", emailEntered);
+    const pass = req.body.pass;
+    console.log("req.body.pass", req.body.pass);
+    try {
+        await usersDataModel.updateOne({ email: emailEntered }, { $set: { password: pass } });
+        await emailVerificationDataModel.updateOne({ email: emailEntered }, { $set: { passwordVerfied: 'no' } });
+        console.log("Passoword Changed successfully.");
+        const message = "Password changed successfully";
+        res.render("login", { message });
+        return;
+    }
+    catch (error) {
+        console.log("error in changing the password :", error);
+        res.render("passEmailVerify", { error });
         return;
     }
 }
@@ -190,5 +266,8 @@ module.exports = {
     userLogout,
     provideCustomizedAuthor,
     verifyEmail,
-    verifyOtp
+    verifyOtp,
+    passEmailVerify,
+    passOtpVerify,
+    newPasswordSet
 };

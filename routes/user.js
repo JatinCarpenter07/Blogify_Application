@@ -1,6 +1,6 @@
 const express = require('express');
 const userRouter = express.Router();
-const { userSignUp, userLogIn, userLogout, provideCustomizedAuthor, verifyEmail, verifyOtp } = require('../controllers/user');
+const { userSignUp, userLogIn, userLogout, provideCustomizedAuthor, verifyEmail, verifyOtp, passEmailVerify, newPasswordSet, passOtpVerify } = require('../controllers/user');
 const { render } = require('ejs');
 const { upload } = require('./blog');
 
@@ -33,6 +33,26 @@ userRouter.get('/login', (req, res) => {
 userRouter.post('/login', (req, res, next) => {
     console.log("POST /login - Submitting login form");
     userLogIn(req, res, next);
+});
+
+userRouter.get('/passEmailVerify', (req, res) => {
+    console.log("GET /passEmailVerify - Rendering passEmailVerify page");
+    res.render("passEmailVerify");
+});
+
+userRouter.post('/passEmailVerify', (req, res,next) => {
+    console.log("post /passEmailVerify - verifying passEmailVerify details");
+    passEmailVerify(req,res,next)
+});
+
+userRouter.post('/passOtpVerify/:emailEntered', (req, res,next) => {
+    console.log("post /passOtpVerify - verifying passOtpVerify details");
+    passOtpVerify(req,res,next)
+});
+
+userRouter.post('/newPasswordSet/:emailEntered', (req, res,next) => {
+    console.log("post /newPasswordSet - verifying newPasswordSet details");
+    newPasswordSet(req,res,next)
 });
 
 userRouter.get('/logout', (req, res, next) => {

@@ -3,7 +3,7 @@
 
 <head>
     <%- include('./partials/head') %>
-    <title>Otp-Verification</title>
+    <title>Pass-Otp-Verification</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100 bg-light">
@@ -15,13 +15,13 @@
             <div class="col-md-6">
                 <div class="card shadow rounded-4 border-0">
                     <div class="card-body p-4">
-                        <h4 class="card-title text-center mb-4 text-primary fw-bold">Email OTP Verification</h4>
-                        
+                        <h4 class="card-title mb-3 text-center text-primary fw-bold">Email OTP Verification</h4>
+
                         <% if(locals?.email){ %>
-                            <p class="text-center mb-4">Enter the OTP sent to <strong><%= email %></strong> to verify your account.</p>
+                            <p class="text-center mb-4">Enter the OTP sent to <strong><%= email %></strong> to verify your email and generate a new password.</p>
                         <% } %>
 
-                        <form action="/user/verifyOtp/<%= email %>" method="post">
+                        <form action="/user/passOtpVerify/<%= email %>" method="post">
                             <div class="mb-3">
                                 <label for="otp" class="form-label">Enter OTP</label>
                                 <input type="text" class="form-control" name="otp" required>
@@ -30,7 +30,6 @@
                                 <button type="submit" class="btn btn-success btn-lg">Verify</button>
                             </div>
                         </form>
-                        <p class="text-muted text-center mt-3 mb-0">Haven’t received the OTP? Please check your spam folder.</p>
                     </div>
                 </div>
             </div>

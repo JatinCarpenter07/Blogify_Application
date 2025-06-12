@@ -116,10 +116,11 @@ async function verifyEmail(req, res) {
     console.log("req.body :", req.body);
     const email = req.body.email;
     const check = await emailVerificationDataModel.find({ email });
+    const checkUser = await usersDataModel.find({ email });
     console.log("check :", check);
     console.log("check.length :", check.length);
     if (check.length) {
-        if (check[0].verified == "yes") {
+        if (check[0].verified == "yes" && checkUser.length) {
             const error = new Error("Already registered with this email")
             console.log("Already registered")
             res.render("verifyEmail", { error });

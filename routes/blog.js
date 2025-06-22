@@ -60,10 +60,10 @@ blogRouter.get('/:ID/:commID/editComments', (req, res) => {
 blogRouter.post('/:ID/:commID/editComments', (req, res) => {
     console.log(`Editing comment ID: ${req.params.commID} on blog ID: ${req.params.ID}...`);
     editComment(req, res);
-});
+}); 
 
 blogRouter.post('/', upload.single("coverImageUrl"), (req, res) => {
-    console.log("Adding new blog...");
+    console.log("post/blog : Adding new blog...");
     addBlog(req, res);
 });
 

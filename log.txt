@@ -12958,3 +12958,467 @@
   "Method": "POST"
 }
 
+{
+  "Time": "22/06/2025, 23:54:29",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:54:32",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:54:35",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:54:37",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/login",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:54:40",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:54:42",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:54:48",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "22/06/2025, 23:55:22",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyOtp/22bcs127@ietdavv.edu.in",
+  "Method": "POST"
+}
+
+{
+  "Time": "22/06/2025, 23:55:29",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:55:31",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/login",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:55:35",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/login",
+  "Method": "POST"
+}
+
+{
+  "Time": "22/06/2025, 23:55:35",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:55:38",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/blog/addBlog",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:55:42",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:55:45",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/account",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:55:47",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/account/profile",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:55:49",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/account/profile/edit",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:55:51",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:55:57",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/blog/684a4f142987228edcf2f23c",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:55:59",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/blog/684a4f142987228edcf2f23c/edit",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:56:02",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:56:07",
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/user/logout",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:56:07",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:56:11",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/login",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:56:19",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/login",
+  "Method": "POST"
+}
+
+{
+  "Time": "22/06/2025, 23:56:19",
+  "IP": "127.0.0.1",
+  "User": "Umesh Carpenter",
+  "Path": "/blog/684a4f142987228edcf2f23c",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:56:25",
+  "IP": "127.0.0.1",
+  "User": "Umesh Carpenter",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:56:26",
+  "IP": "127.0.0.1",
+  "User": "Umesh Carpenter",
+  "Path": "/blog/addBlog",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:56:56",
+  "IP": "127.0.0.1",
+  "User": "Umesh Carpenter",
+  "Path": "/blog",
+  "Method": "POST"
+}
+
+{
+  "Time": "22/06/2025, 23:57:00",
+  "IP": "127.0.0.1",
+  "User": "Umesh Carpenter",
+  "Path": "/blog/68584af4e84e009a020d2d25",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:57:05",
+  "IP": "127.0.0.1",
+  "User": "Umesh Carpenter",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:57:29",
+  "IP": "127.0.0.1",
+  "User": "Umesh Carpenter",
+  "Path": "/allAuthors",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:57:32",
+  "IP": "127.0.0.1",
+  "User": "Umesh Carpenter",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:57:53",
+  "IP": "127.0.0.1",
+  "User": "Umesh Carpenter",
+  "Path": "/user/logout",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:57:53",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:57:57",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "GET"
+}
+
+{
+  "Time": "22/06/2025, 23:58:02",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "22/06/2025, 23:58:31",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyOtp/22bcs127@ietdavv.edu.in",
+  "Method": "POST"
+}
+
+{
+  "Time": "23/06/2025, 00:01:42",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/signup/22bcs127@ietdavv.edu.in",
+  "Method": "POST"
+}
+
+{
+  "Time": "23/06/2025, 00:03:32",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "23/06/2025, 00:03:36",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "GET"
+}
+
+{
+  "Time": "23/06/2025, 00:05:20",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "23/06/2025, 00:05:44",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyOtp/fexato8441@hosliy.com",
+  "Method": "POST"
+}
+
+{
+  "Time": "23/06/2025, 00:06:04",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/signup/fexato8441@hosliy.com",
+  "Method": "POST"
+}
+
+{
+  "Time": "23/06/2025, 00:06:21",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/login",
+  "Method": "POST"
+}
+
+{
+  "Time": "23/06/2025, 00:06:21",
+  "IP": "127.0.0.1",
+  "User": "fake person",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "23/06/2025, 00:06:32",
+  "IP": "127.0.0.1",
+  "User": "fake person",
+  "Path": "/account",
+  "Method": "GET"
+}
+
+{
+  "Time": "23/06/2025, 00:06:33",
+  "IP": "127.0.0.1",
+  "User": "fake person",
+  "Path": "/account/profile",
+  "Method": "GET"
+}
+
+{
+  "Time": "23/06/2025, 00:06:36",
+  "IP": "127.0.0.1",
+  "User": "fake person",
+  "Path": "/account/profile/delete",
+  "Method": "GET"
+}
+
+{
+  "Time": "23/06/2025, 00:06:38",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/logout",
+  "Method": "GET"
+}
+
+{
+  "Time": "23/06/2025, 00:06:38",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "23/06/2025, 00:08:00",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/login",
+  "Method": "GET"
+}
+
+{
+  "Time": "23/06/2025, 00:08:02",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "GET"
+}
+
+{
+  "Time": "23/06/2025, 00:08:14",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "23/06/2025, 00:16:35",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+
+{
+  "Time": "23/06/2025, 00:16:38",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "GET"
+}
+
+{
+  "Time": "23/06/2025, 00:16:42",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/verifyEmail",
+  "Method": "POST"
+}
+
+{
+  "Time": "23/06/2025, 00:26:28",
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/",
+  "Method": "GET"
+}
+

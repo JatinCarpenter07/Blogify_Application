@@ -25,7 +25,7 @@ async function userSignUp(req, res) {
             }
             await usersDataModel.create(userData);
             const message="User Successfully Registered , Kindly Login"
-            res.render('login',message);
+            res.render('login',{message});
             return;
         }
         else {

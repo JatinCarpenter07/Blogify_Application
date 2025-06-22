@@ -700,3 +700,16 @@
   "Method": "POST"
 }
 
+{
+  "Time": "23/06/2025, 00:01:46",
+  "Error": {
+    "name": "TypeError",
+    "message": "Cannot create property '_locals' on string 'User Successfully Registered , Kindly Login'",
+    "stack": "TypeError: Cannot create property '_locals' on string 'User Successfully Registered , Kindly Login'\n    at ServerResponse.render (E:\\NodeJs\\Node_16_Blogging_Application\\node_modules\\express\\lib\\response.js:900:16)\n    at userSignUp (E:\\NodeJs\\Node_16_Blogging_Application\\controllers\\user.js:28:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+  },
+  "IP": "127.0.0.1",
+  "User": "Guest",
+  "Path": "/user/signup/22bcs127@ietdavv.edu.in",
+  "Method": "POST"
+}
+

@@ -6,19 +6,19 @@
 </head>
 <body class="d-flex flex-column min-vh-100">
     <%- include('./partials/navbar') %>
-    <form action="/blog/<%=blogId%>/edit" method="post" class="container mt-4" enctype="multipart/form-data">
+    <form action="/blog/<%=blogId%>/edit" method="post" class="container mt-4" enctype="multipart/form-data" autocomplete="off">
         <div class="mb-3">
           <label for="title" class="form-label">Title</label>
-          <input type="text" class="form-control" name="title" aria-describedby="Title of Blog" value="<%= blogData.title %>" required>
+          <input type="text" class="form-control" name="title" aria-describedby="Title of Blog" value="<%= blogData.title %>" autocomplete="off" required>
         </div>
         
         <div class="form-floating">
             <div><label for="description">Description</label></div>
-            <input type="text" class="form-control" name="description" aria-describedby="Description of Blog" value="<%= blogData.description %>" required>
+            <input type="text" class="form-control" name="description" aria-describedby="Description of Blog" value="<%= blogData.description %>" required autocomplete="off">
         </div>
         <div class="form-floating">
             <div><label for="body">Body</label></div>
-            <textarea class="form-control" placeholder="Write the Blog" name="body" style="height: 300px" ><%= blogData.body %></textarea>
+            <textarea class="form-control" placeholder="Write the Blog" name="body" style="height: 300px" autocomplete="off" ><%= blogData.body %></textarea>
         </div>
         <div class="mb-3">
             <label for="coverImageUrl" class="form-label">Cover Image</label>

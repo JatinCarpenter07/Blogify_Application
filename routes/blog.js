@@ -14,6 +14,7 @@ const {
 const blogRouter = express.Router();
 
 const {storage} =require("../services/cloudinary");
+const blogsDataModel = require('../models/blogsData');
 
 const upload = multer({ storage: storage });
 
@@ -27,9 +28,12 @@ blogRouter.post('/:ID/comments', (req, res) => {
     addTheComments(req, res);
 });
 
-blogRouter.get('/:ID/edit', (req, res) => {
+blogRouter.get('/:ID/edit', async(req, res) => {
     console.log(`Rendering editBlog page for blog ID: ${req.params.ID}...`);
-    res.render("editBlog", { blogId: req.params.ID, user: req.user });
+    const blog=await blogsDataModel.findById(req.params.ID);
+    console.log('inside the EditBlog Blog :',blog);
+     
+    res.render("editBlog", { blogId: req.params.ID, user: req.user,blogData:blog });
 });
 
 blogRouter.post('/:ID/edit', upload.single("coverImageUrl"), (req, res) => {

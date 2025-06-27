@@ -713,3 +713,16 @@
   "Method": "POST"
 }
 
+{
+  "Time": "27/06/2025, 12:29:30",
+  "Error": {
+    "name": "TypeError",
+    "message": "Cannot read properties of undefined (reading 'path')",
+    "stack": "TypeError: Cannot read properties of undefined (reading 'path')\n    at changeBlog (E:\\NodeJs\\Node_16_Blogging_Application\\controllers\\blog.js:144:41)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+  },
+  "IP": "127.0.0.1",
+  "User": "Jatin Carpenter",
+  "Path": "/blog/684a4f142987228edcf2f23c/edit",
+  "Method": "POST"
+}
+
